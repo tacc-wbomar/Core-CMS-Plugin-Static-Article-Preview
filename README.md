@@ -7,6 +7,12 @@ This plugin renders a static preview of content from an article.
 - __`__PluginName__`__: `TaccsiteStaticArticlePreview`
 - __"Plugin Name"__: "(Static) Article Preview"
 
+<details><summary>Intent</summary>
+
+_This plugin only exists because of the unavailaibility of a solution to sync news between two TACC websites. To learn more, see [TACC/Core-CMS wiki page "Static-Article-Plugins"][tacc-sa-plugins]._
+
+</details>
+
 ## Quick Start
 
 1. Follow https://github.com/tacc-wbomar/Core-CMS-Plugin/wiki/Core-CMS-Plugin-Usage-Quick-Start.
@@ -75,10 +81,13 @@ This plugin renders a static preview of content from an article.
 
 - Requires [`djangocms_link`][dcms-link].\*
 - Expects [`taccsite_static_article_list`][tacc-sa-list].†
+- Hyperlink is within title tag (does not wrap article).‡
 
 > \* Support is mandatory, but should become optional in a future release.
 >
 > † A plugin instance is not allowed except inside this parent plugin.
+>
+> ‡ So the entire article is not a link. To add this support to your app, [stretch the link](https://github.com/TACC/Core-CMS/blob/b028b59/taccsite_cms/static/site_cms/css/src/_imports/tools/x-article-link.css#L20-L29). To add this support to this app, this plugin could [render `<a>` like `taccsite_callout`](https://github.com/tacc-wbomar/Core-CMS-Plugin-Callout/blob/7d287a9/taccsite_callout/templates/callout.html#L12-L25).
 
 
 
