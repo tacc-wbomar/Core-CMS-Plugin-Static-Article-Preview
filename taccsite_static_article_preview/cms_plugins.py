@@ -99,6 +99,7 @@ class AbstractArticlePreviewPlugin(LinkPlugin, AbstractMaxChildrenPlugin):
 
         context.update({
             'kind': self.kind,
+            # TODO: Only provide if plugin is installed
             'link_url': instance.get_link(),
             'link_text': instance.name,
             'link_target': instance.target

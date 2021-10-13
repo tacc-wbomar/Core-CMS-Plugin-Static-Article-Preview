@@ -20,7 +20,7 @@ This plugin renders a static preview of content from an article.
 
 ## Features
 
-1. Render an `<article>` with content in semantic markup.
+1. Render an `<article>` with content using semantic markup.
 2. Support previews of different kinds of articles.
     <details>
 
@@ -33,7 +33,7 @@ This plugin renders a static preview of content from an article.
 
     </details>
 
-3. May only render within [`taccsite_static_article_list`][tacc-sa-list] of the same kind.
+3. Only supported as nested within [`taccsite_static_article_list`][tacc-sa-list] of the same kind.
 4. Inteligently renders date or date range for some kinds of articles.
 
     <details>
