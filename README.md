@@ -14,8 +14,8 @@ This plugin renders a static preview of content from an article.
 ## Usage
 
 1. Add instance of [`taccsite_static_article_list`][tacc-sa-list] to a page.
-1. Add instance of this plugin within a [`taccsite_static_article_list`][tacc-sa-list].
 1. Configure the plugin instance.
+1. Add instance of this plugin within a [`taccsite_static_article_list`][tacc-sa-list].
 1. See plugin render content that matches configuration.
 
 ## Features
