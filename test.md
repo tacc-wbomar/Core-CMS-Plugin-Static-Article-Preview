@@ -17,7 +17,7 @@ _Source Article: [Article Preview - Allocations - Date Logic](https://confluence
 
 Report **both** dates as a range.
 
-
+![Past Open Date, Future Close Date](https://user-images.githubusercontent.com/62723358/137193959-04f414e9-fc15-4f08-8919-1645584e6037.png)
 
 
 
@@ -29,7 +29,7 @@ Report **both** dates as a range.
 
 Report that upcoming **open** date.
 
-![](/download/attachments/235215938/Future%20Open%20Date.png?version=1&modificationDate=1624640503539&api=v2)
+![Future Open Date](https://user-images.githubusercontent.com/62723358/137193989-793bb723-01d6-42f9-b766-766eb1f77982.png)
 
 
 
@@ -37,7 +37,7 @@ Report that upcoming **open** date.
 
 Report that upcoming **close** date.
 
-![](/download/attachments/235215938/Future%20Close%20Date.png?version=1&modificationDate=1624640503528&api=v2)
+![Future Close Date](https://user-images.githubusercontent.com/62723358/137194017-90d27ea5-ff04-460f-ace5-ed334443580d.png)
 
 
 
@@ -45,7 +45,7 @@ Report that upcoming **close** date.
 
 Report **both** upcoming dates as a range.
 
-![](/download/attachments/235215938/Future%20Earlier%20Open%20Date%2C%20Future%20Later%20Close%20Date.png?version=1&modificationDate=1624640503519&api=v2)
+![Future Earlier Open Date, Future Later Close Date](https://user-images.githubusercontent.com/62723358/137194046-ab815fa7-b88e-4320-b0d0-09e64ee51fa9.png)
 
 
 
@@ -53,7 +53,7 @@ Report **both** upcoming dates as a range.
 
 Report the upcoming **close** date.
 
-![](/download/attachments/235215938/Future%20Later%20Open%20Date%2C%20Future%20Earlier%20Close%20Date.png?version=1&modificationDate=1624640503509&api=v2)
+![Future Later Open Date, Future Earlier Close Date](https://user-images.githubusercontent.com/62723358/137194078-cb8f0af4-980b-4538-bfb6-7acbb2b5dcc1.png)
 
 
 
@@ -61,7 +61,7 @@ Report the upcoming **close** date.
 
 Report the upcoming **open** date.
 
-![](/download/attachments/235215938/Future%20Open%20Date%2C%20Past%20Close%20Date.png?version=1&modificationDate=1624640503499&api=v2)
+![Future Open Date, Past Close Date](https://user-images.githubusercontent.com/62723358/137194095-73b2e804-71a1-4497-be93-cb9a40d65062.png)
 
 
 
@@ -73,7 +73,7 @@ Report the upcoming **open** date.
 
 Report that previous **open** date.
 
-![](/download/attachments/235215938/Past%20Open%20Date.png?version=1&modificationDate=1624640503481&api=v2)
+![Past Open Date](https://user-images.githubusercontent.com/62723358/137194126-76b2453a-2ec6-49de-ac0c-1cce086e4160.png)
 
 
 
@@ -81,7 +81,7 @@ Report that previous **open** date.
 
 Report that previous **close** date.
 
-![](/download/attachments/235215938/Past%20Close%20Date.png?version=1&modificationDate=1624640503472&api=v2)
+![Past Close Date](https://user-images.githubusercontent.com/62723358/137194140-f9736a89-2acc-4b74-9857-d6715a0759c9.png)
 
 
 
@@ -89,7 +89,7 @@ Report that previous **close** date.
 
 Report **both** previous dates as a range.
 
-![](/download/attachments/235215938/Past%20Earlier%20Open%20Date%2C%20Past%20Later%20Close%20Date.png?version=1&modificationDate=1624640503459&api=v2)
+![Past Earlier Open Date, Past Later Close Date](https://user-images.githubusercontent.com/62723358/137194163-55f46c0b-9bc3-4649-89f5-641751b3ef99.png)
 
 
 
@@ -97,4 +97,4 @@ Report **both** previous dates as a range.
 
 Report the previous **open** date.
 
-![](/download/attachments/235215938/Past%20Later%20Open%20Date%2C%20Past%20Earlier%20Close%20Date.png?version=1&modificationDate=1624640503309&api=v2)
+![Past Later Open Date, Past Earlier Close Date](https://user-images.githubusercontent.com/62723358/137194184-4ed21e64-3857-46aa-a5a2-a8344e58a842.png)
