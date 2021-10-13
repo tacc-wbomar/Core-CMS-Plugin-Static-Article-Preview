@@ -1,0 +1,26 @@
+/*
+Article Preview
+
+A preview of an article (may be used in a `c-article-list`).
+
+Markup:
+<article class="c-article-preview c-article-preview--………">
+  <div class="c-article-preview__media">
+    <img src="………" alt="………" />
+  </div>
+  <h3 class="c-article-preview__title">
+    A Long or Short Title of Article
+  </h3>
+  <p class="c-article-preview__abstract">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <ul class="c-article-preview__metadata">
+    <li class="c-article-preview__date">
+      <time datetime="2018-07-07">July 7</time>
+    </li>
+    <li class="c-article-preview__type">Science News</li>
+    <li class="c-article-preview__author">Wesley B.</li>
+  </ul>
+</article>
+*/
+/* SEE: https://github.com/tacc-wbomar/Core-CMS-Plugin-Static-Article-List */

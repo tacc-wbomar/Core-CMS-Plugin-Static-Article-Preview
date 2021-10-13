@@ -1,56 +1,96 @@
 ## Texas Advanced Computing Center
-# Django CMS Plugin: "Plugin Name"
+# Django CMS Plugin: "(Static) Article Preview"
 
-This plugin [does something].
+This plugin renders a static preview of content from an article.
 
-- __`__plugin_name__`__: `taccsite_example`
-- __`__PluginName__`__: `TaccsiteExample`
-- __"Plugin Name"__: "Example"
-
-## For Plugin Developer
-
-After cloning this repository for your plugin:
-
-1. Follow https://github.com/tacc-wbomar/Core-CMS-Plugin/wiki/Core-CMS-Plugin-Development-Quick-Start.
-2. Remove this section from your repository's `README.md`.
-
+- __`__plugin_name__`__: `taccsite_static_article_preview`
+- __`__PluginName__`__: `TaccsiteStaticArticlePreview`
+- __"Plugin Name"__: "(Static) Article Preview"
 
 ## Quick Start
 
 1. Follow https://github.com/tacc-wbomar/Core-CMS-Plugin/wiki/Core-CMS-Plugin-Usage-Quick-Start.
 
-> The next steps are sample steps that should be replaced with plugin-specific steps, if any.
-
-2. Any step that is specific to the plugin, such as the steps after this.
-
-    ```
-    # provide minimal example code that may help the reader
-    ```
-
-3. Add a URLconf in your Django project's `urls.py` like this:
-
-    ```
-        url(r'^sysmon/', include('__plugin_name__.urls')),
-    ```
-
-4. Add `__plugin_name_some_prop__` property and value to your Django project's settings:
-
-    ```
-    __plugin_name_some_prop__ = 'specific_value'
-    ```
-
-5. Visit [http://your.project.url.host/some_plugin_url_path/](http://127.0.0.1:8000/ "The URL for your environment may be different than this.").
-
 ## Usage
 
-> This section is sample usage steps that should be replaced with plugin-specific steps, or be removed.
-
-1. Add instance of plugin to a page.
+1. Add instance of [`taccsite_static_article_list`][tacc-sa-list] to a page.
+1. Add instance of this plugin within a [`taccsite_static_article_list`][tacc-sa-list].
 1. Configure the plugin instance.
 1. See plugin render content that matches configuration.
 
 ## Features
 
-> This section should describe the feature of the plugin or be removed.
+1. Render an `<article>` with content in semantic markup.
+2. Support previews of different kinds of articles.
+    <details>
 
-…
+    | kind | description | content |
+    | :- | :- | :- |
+    | News | [external news articles][tacc-sa-plugins] | image, type, date published, title, abstract |
+    | Documents | [single-topic documents][tacc-core-docs] | title, abstract |
+    | Allocations | [date range for applications][fp-allocs] | image, title, date (or range) |
+    | Events | [learning opportunities][tacc-learn] | date (or range), title, abstract |
+
+    </details>
+
+3. May only render within [`taccsite_static_article_list`][tacc-sa-list] of the same kind.
+4. Inteligently renders date or date range for some kinds of articles.
+
+    <details>
+
+    | kind | outputs |
+    | :- | :- |
+    | Allocations | date or range (with appropriate English) |
+    | Events | date or range (with dash "–" as needed) |
+
+    | render method | for which dates |
+    | :- | :- |
+    | range | a date range within which the current date lies |
+    | next future date | a publish and/or expiry date that is in the future |
+    | last past date | a publish and/or expiry date that is in the past |
+
+    For examples of Allocation dates, see [`docs/allocation-dates.md`](https://github.com/tacc-wbomar/Core-CMS-Plugin-Static-Article-Preview/blob/main/docs/allocation-dates.md).
+
+    </details>
+5. Renders supported, nested plugin instances to incorporate extra content.
+    <details>
+
+    | content | supported by |
+    | :- | :- |
+    | image | [`djangocms-picture`][dcms-picture] |
+    |   "   | [`djangocms_bootstrap4`][dcms-bs4]'s [`bootstrap4_picture`][bs4-picture] |
+
+    </details>
+6. Uses supported, integrated plugin instances to incorporate extra features.
+    <details>
+
+    | feature | supported by |
+    | :- | :- |
+    | article preview as hyperlink | [`taccsite_data_list`][dcms-link] |
+
+    </details>
+7. Supports (but does not render) author.
+
+## Caveats
+
+- Requires [`djangocms_link`][dcms-link].\*
+- Expects [`taccsite_static_article_list`][tacc-sa-list].†
+
+> \* Support is mandatory, but should become optional in a future release.
+>
+> † A plugin instance is not allowed except inside this parent plugin.
+
+
+
+[fp-allocs]: https://frontera-portal.tacc.utexas.edu/allocations/
+
+[tacc-learn]: https://learn.tacc.utexas.edu/
+[tacc-core-docs]: https://cep.tacc.utexas.edu/guides/
+[tacc-sa-plugins]: https://github.com/TACC/Core-CMS/wiki/Static-Article-Plugins
+[tacc-sa-list]: https://github.com/tacc-wbomar/Core-CMS-Plugin-Static-Article-List
+
+[dcms-link]: https://github.com/django-cms/djangocms-link
+[dcms-picture]: https://github.com/django-cms/djangocms-picture
+
+[dcms-bs4]: https://github.com/django-cms/djangocms-bootstrap4
+[bs4-picture]: https://github.com/django-cms/djangocms-bootstrap4/tree/master/djangocms_bootstrap4/contrib/bootstrap4_picture
