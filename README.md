@@ -79,9 +79,9 @@ _This plugin only exists because of the unavailaibility of a solution to sync ne
 
 ## Caveats
 
-- Requires [`djangocms_link`][dcms-link].\*
-- Expects [`taccsite_static_article_list`][tacc-sa-list].†
-- Hyperlink is within title tag (does not wrap article).‡
+1. Requires [`djangocms_link`][dcms-link].\*
+1. Expects [`taccsite_static_article_list`][tacc-sa-list].†
+1. Hyperlink is within title tag (does not wrap article).‡
 
 > \* Support is optional but plugin is assummed, so plugin is required. This could change in a future release.
 >
