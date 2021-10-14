@@ -5,7 +5,7 @@ from django.utils.translation import gettext_lazy as _
 from django.utils.encoding import force_text
 from django.db import models
 
-# TODO: Only import if plugin is installed
+# TODO: Consider only importing if plugin is installed
 from djangocms_link.models import AbstractLink
 
 from taccsite_cms.contrib.helpers import clean_for_abstract_link
@@ -102,7 +102,7 @@ def create_expiry_date_field(blank=True, help_text=None, verbose_name=None):
 
 # Models
 
-# TODO: Only extend if plugin is installed
+# TODO: Consider only extending if plugin is installed
 class TaccsiteStaticNewsArticlePreview(AbstractLink):
     media_support = create_media_support_field(blank=False)
     title_text = create_title_text_field(blank=False)
@@ -115,6 +115,7 @@ class TaccsiteStaticNewsArticlePreview(AbstractLink):
 
 
     # Parent
+    # TODO: Consider only supporting link if plugin is installed
 
     link_is_optional = True
 
@@ -125,7 +126,7 @@ class TaccsiteStaticNewsArticlePreview(AbstractLink):
     def clean(self):
         clean_for_abstract_link(__class__, self)
 
-# TODO: Only extend if plugin is installed
+# TODO: Consider only extending if plugin is installed
 class TaccsiteStaticAllocsArticlePreview(AbstractLink):
     media_support = create_media_support_field(blank=False)
     title_text = create_title_text_field(blank=False)
@@ -142,6 +143,7 @@ class TaccsiteStaticAllocsArticlePreview(AbstractLink):
 
 
     # Parent
+    # TODO: Consider only supporting link if plugin is installed
 
     link_is_optional = True
 
@@ -152,7 +154,7 @@ class TaccsiteStaticAllocsArticlePreview(AbstractLink):
     def clean(self):
         clean_for_abstract_link(__class__, self)
 
-# TODO: Only extend if plugin is installed
+# TODO: Consider only extending if plugin is installed
 class TaccsiteStaticDocsArticlePreview(AbstractLink):
     title_text = create_title_text_field(blank=False)
     abstract_text = create_abstract_text_field(blank=False)
@@ -160,6 +162,7 @@ class TaccsiteStaticDocsArticlePreview(AbstractLink):
 
 
     # Parent
+    # TODO: Consider only supporting link if plugin is installed
 
     link_is_optional = True
 
@@ -170,7 +173,7 @@ class TaccsiteStaticDocsArticlePreview(AbstractLink):
     def clean(self):
         clean_for_abstract_link(__class__, self)
 
-# TODO: Only extend if plugin is installed
+# TODO: Consider only extending if plugin is installed
 class TaccsiteStaticEventsArticlePreview(AbstractLink):
     title_text = create_title_text_field(blank=False)
     abstract_text = create_abstract_text_field(blank=False)
@@ -187,6 +190,7 @@ class TaccsiteStaticEventsArticlePreview(AbstractLink):
 
 
     # Parent
+    # TODO: Consider only supporting link if plugin is installed
 
     link_is_optional = True
 

@@ -83,7 +83,7 @@ _This plugin only exists because of the unavailaibility of a solution to sync ne
 - Expects [`taccsite_static_article_list`][tacc-sa-list].†
 - Hyperlink is within title tag (does not wrap article).‡
 
-> \* Support is mandatory, but should become optional in a future release.
+> \* Support is optional but plugin is assummed, so plugin is required. This could change in a future release.
 >
 > † A plugin instance is not allowed except inside this parent plugin.
 >

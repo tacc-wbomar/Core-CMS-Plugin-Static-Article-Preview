@@ -3,7 +3,7 @@ from django.core.exceptions import ValidationError
 from cms.plugin_pool import plugin_pool
 from django.utils.translation import gettext_lazy as _
 
-# TODO: Only import if plugin is installed
+# TODO: Consider only importing if plugin is installed
 from djangocms_link.cms_plugins import LinkPlugin
 
 from taccsite_cms.contrib.helpers import (
@@ -46,7 +46,7 @@ def get_kind_classname(value):
 
 # Abstracts
 
-# TODO: Only extend if plugin is installed
+# TODO: Consider only extending if plugin is installed
 class AbstractArticlePreviewPlugin(LinkPlugin, AbstractMaxChildrenPlugin):
     module = 'TACC Site'
     # model = TaccsiteStatic___ArticlePreview # abstract
@@ -62,7 +62,7 @@ class AbstractArticlePreviewPlugin(LinkPlugin, AbstractMaxChildrenPlugin):
     # require_parent = True
 
     fieldsets = [
-        # TODO: Only render if plugin is installed
+        # TODO: Consider only rendering if plugin is installed
         (_('Link'), {
             'fields': (
                 ('external_link', 'internal_link'),
@@ -99,7 +99,7 @@ class AbstractArticlePreviewPlugin(LinkPlugin, AbstractMaxChildrenPlugin):
 
         context.update({
             'kind': self.kind,
-            # TODO: Only provide if plugin is installed
+            # TODO: Consider only exposing if plugin is installed
             'link_url': instance.get_link(),
             'link_text': instance.name,
             'link_target': instance.target
