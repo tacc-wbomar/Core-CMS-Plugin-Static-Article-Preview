@@ -3,8 +3,9 @@
 
 This plugin renders a static preview of content from an article.
 
-- __`__plugin_name__`__: `taccsite_static_article_preview`
-- __`__PluginName__`__: `TaccsiteStaticArticlePreview`
+- __`__dist-name__`__: `taccsite_static_article_preview`
+- __`__package_name__`__: `taccsite_static_article_preview`
+- __`__ClassName__`__: `TaccsiteStaticArticlePreview`
 - __"Plugin Name"__: "(Static) Article Preview"
 
 <details><summary>Intent</summary>
