@@ -3,8 +3,8 @@
 
 This plugin renders a static preview of content from an article.
 
-- __`__dist-name__`__: `taccsite_static_article_preview`
-- __`__package_name__`__: `taccsite_static_article_preview`
+- __`__dist-name__`__: `djangocms-tacc-static-article-preview`
+- __`__package_name__`__: `djangocms_tacc_static_article_preview`
 - __`__ClassName__`__: `TaccsiteStaticArticlePreview`
 - __"Plugin Name"__: "(Static) Article Preview"
 
@@ -20,9 +20,9 @@ _This plugin only exists because of the unavailaibility of a solution to sync ne
 
 ## Usage
 
-1. Add instance of [`taccsite_static_article_list`][tacc-sa-list] to a page.
+1. Add instance of [`djangocms_tacc_static_article_list`][tacc-sa-list] to a page.
 1. Configure the plugin instance.
-1. Add instance of this plugin within a [`taccsite_static_article_list`][tacc-sa-list].
+1. Add instance of this plugin within a [`djangocms_tacc_static_article_list`][tacc-sa-list].
 1. See plugin render content that matches configuration.
 
 ## Features
@@ -40,7 +40,7 @@ _This plugin only exists because of the unavailaibility of a solution to sync ne
 
     </details>
 
-3. Only supported as nested within [`taccsite_static_article_list`][tacc-sa-list] of the same kind.
+3. Only supported as nested within [`djangocms_tacc_static_article_list`][tacc-sa-list] of the same kind.
 4. Inteligently renders date or date range for some kinds of articles.
 
     <details>
@@ -73,7 +73,7 @@ _This plugin only exists because of the unavailaibility of a solution to sync ne
 
     | feature | supported by |
     | :- | :- |
-    | article preview as hyperlink | [`taccsite_data_list`][dcms-link] |
+    | article preview as hyperlink | [`djangocms_tacc_data_list`][dcms-link] |
 
     </details>
 7. Supports (but does not render) author.
@@ -81,14 +81,14 @@ _This plugin only exists because of the unavailaibility of a solution to sync ne
 ## Caveats
 
 1. Requires [`djangocms_link`][dcms-link].\*
-1. Expects [`taccsite_static_article_list`][tacc-sa-list].†
+1. Expects [`djangocms_tacc_static_article_list`][tacc-sa-list].†
 1. Hyperlink is within title tag (does not wrap article).‡
 
 > \* Support is optional but plugin is assummed, so plugin is required. This could change in a future release.
 >
 > † A plugin instance is not allowed except inside this parent plugin.
 >
-> ‡ So the entire article is not a link. To add this support to your app, [stretch the link](https://github.com/TACC/Core-CMS/blob/b028b59/taccsite_cms/static/site_cms/css/src/_imports/tools/x-article-link.css#L20-L29). To add this support to this app, this plugin could [render `<a>` like `taccsite_callout`](https://github.com/tacc-wbomar/Core-CMS-Plugin-Callout/blob/7d287a9/taccsite_callout/templates/callout.html#L12-L25).
+> ‡ So the entire article is not a link. To add this support to your app, [stretch the link](https://github.com/TACC/Core-CMS/blob/b028b59/taccsite_cms/static/site_cms/css/src/_imports/tools/x-article-link.css#L20-L29). To add this support to this app, this plugin could [render `<a>` like `djangocms_tacc_callout`](https://github.com/tacc-wbomar/Core-CMS-Plugin-Callout/blob/7d287a9/djangocms_tacc_callout/templates/callout.html#L12-L25).
 
 
 
